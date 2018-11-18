@@ -17,7 +17,6 @@ AgenDAV |release| requires the following software to be installed:
 
   * ctype
   * curl
-  * curl
   * mbstring
   * mcrypt
   * tokenizer
@@ -79,7 +78,7 @@ Create a user in MySQL and let it use a new `agendav` database::
  $ mysql --default-character-set=utf8 -uroot -p
  Enter password: 
  [...]
- mysql> GRANT ALL PRIVILEGES ON agendav.* TO agendav@localhost IDENTIFIED BY 'yourpassword'
+ mysql> GRANT ALL PRIVILEGES ON agendav.* TO agendav@localhost IDENTIFIED BY 'yourpassword';
  mysql> CREATE DATABASE agendav CHARACTER SET utf8 COLLATE utf8_general_ci;
  mysql> FLUSH PRIVILEGES;
  mysql> ^D
